@@ -1,4 +1,4 @@
-# Designing Operational Visibility — Service Operations & Technical Backstage
+# Designing Operational Visibility - Service Operations & Technical Backstage
 
 Este é o eixo principal do case de portfólio. A estrutura foi pensada para mostrar que o problema não é apenas técnico, mas operacional: a falta de visibilidade sobre dados, dependências e responsáveis aumenta o esforço para reagir a falhas e retomar a atividade do dia a dia.
 
