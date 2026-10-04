@@ -1,0 +1,57 @@
+{
+  "project": "Aurora Grid",
+  "dataAsset": "Daily Energy Indicator",
+  "frequency": "daily",
+  "criticality": "high",
+  "repositories": [
+    {
+      "name": "aurora-source-ingest",
+      "layer": "source",
+      "owner": "Integracao",
+      "sourceSystem": "external-provider",
+      "downstream": ["aurora-raw-forecast"]
+    },
+    {
+      "name": "aurora-raw-forecast",
+      "layer": "raw",
+      "owner": "Dados",
+      "sourceSystem": "aurora-source-ingest",
+      "downstream": ["aurora-transform-grid"]
+    },
+    {
+      "name": "aurora-transform-grid",
+      "layer": "transformations",
+      "owner": "Engenharia de Dados",
+      "sourceSystem": "aurora-raw-forecast",
+      "downstream": ["aurora-curated-signals"]
+    },
+    {
+      "name": "aurora-curated-signals",
+      "layer": "curated",
+      "owner": "Dados de Operacao",
+      "sourceSystem": "aurora-transform-grid",
+      "downstream": ["aurora-ops-api"]
+    },
+    {
+      "name": "aurora-ops-api",
+      "layer": "serving",
+      "owner": "Produto Operacional",
+      "sourceSystem": "aurora-curated-signals",
+      "downstream": ["aurora-portal-operacoes"]
+    },
+    {
+      "name": "aurora-portal-operacoes",
+      "layer": "consumer",
+      "owner": "UX e Operacoes",
+      "sourceSystem": "aurora-ops-api",
+      "downstream": ["Planejamento Operacional"]
+    }
+  ],
+  "edges": [
+    ["aurora-source-ingest", "aurora-raw-forecast"],
+    ["aurora-raw-forecast", "aurora-transform-grid"],
+    ["aurora-transform-grid", "aurora-curated-signals"],
+    ["aurora-curated-signals", "aurora-ops-api"],
+    ["aurora-ops-api", "aurora-portal-operacoes"]
+  ]
+}

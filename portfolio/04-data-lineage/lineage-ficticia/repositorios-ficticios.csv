@@ -1,0 +1,7 @@
+repo,camada,origem,freq,critico,dono,downstream,status
+aurora-source-ingest,source,Fornecedor externo,diaria,alta,Integracao,aurora-raw-forecast,ativo
+aurora-raw-forecast,raw,aurora-source-ingest,diaria,alta,Dados,aurora-transform-grid,ativo
+aurora-transform-grid,transformations,aurora-raw-forecast,diaria,alta,Engenharia de Dados,aurora-curated-signals,ativo
+aurora-curated-signals,curated,aurora-transform-grid,diaria,alta,Dados de Operacao,aurora-ops-api,ativo
+aurora-ops-api,serving,aurora-curated-signals,diaria,alta,Produto Operacional,aurora-portal-operacoes,ativo
+aurora-portal-operacoes,consumer,aurora-ops-api,diaria,alta,UX e Operacoes,Planejamento Operacional,ativo
