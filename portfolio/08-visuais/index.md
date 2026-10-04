@@ -1,4 +1,4 @@
-# 08 — Visuais
+# 08 - Visuais
 
 ## Objetivo
 
