@@ -17,7 +17,7 @@ Projeto **fictício**, desenvolvido exclusivamente para portfólio. Empresa, sis
 ## Como navegar
 
 1. [Resumo executivo](portfolio/resumo-executivo.md)
-2. [Board do case — 15 frames](portfolio/00-board/index.md)
+2. [Board do case - 15 frames](portfolio/00-board/index.md)
 3. [Data Lineage e BPMN fictícios](portfolio/04-data-lineage/index.md)
 4. [Métricas](portfolio/07-metricas/index.md)
 5. [Visuais](portfolio/08-visuais/index.md)

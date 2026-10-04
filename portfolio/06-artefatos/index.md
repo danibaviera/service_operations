@@ -1,4 +1,4 @@
-# 06 — Artefatos
+# 06 - Artefatos
 
 ## Objetivo
 

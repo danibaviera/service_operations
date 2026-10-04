@@ -1,7 +1,7 @@
 # Resumo Executivo
 
 ## Case
-Designing Operational Visibility — Service Operations & Technical Backstage
+Designing Operational Visibility - Service Operations & Technical Backstage
 
 ## Problema
 
