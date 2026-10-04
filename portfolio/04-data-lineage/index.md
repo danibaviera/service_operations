@@ -1,4 +1,4 @@
-# 04 — Data Lineage
+# 04 - Data Lineage
 
 ## Objetivo
 
@@ -6,7 +6,7 @@ Explicar a cadeia do dado desde a origem até o consumidor final, mostrando depe
 
 ## Data asset principal
 
-Daily Energy Indicator — indicador diário fictício, de criticidade alta, consumido no planejamento operacional.
+Daily Energy Indicator - indicador diário fictício, de criticidade alta, consumido no planejamento operacional.
 
 ## Fluxo principal
 
